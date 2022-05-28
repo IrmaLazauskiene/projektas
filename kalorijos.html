@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stilius.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>Sužinokite jums reikalingą kilokalorijų kiekį.</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-3 col-s-3 menu">
+      <ul>
+        <li><a href="index.html"> Pradžia </a></li>
+        <li><a href="meniu.html">Dienos meniu<a></li>
+        <li>Jums reikalingas kcal</li>
+        <li>Ar žinai,kad...</li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-s-9" id="formDiv">
+      <h2>Įveskite savo informaciją:</h2>
+      <div id="formDiv">
+            <form id="zmgForm">
+                <label for="lytis" >Lytis: </label>
+                <select name="lytis" id="lytis" autofocus>
+                  <option value="M">Moteris</option>
+                  <option value="V">Vyras</option>
+                </select><br><br>
+                <label for="age" >Amžius: </label>
+                <input type="text" id="age" placeholder="Įveskite savo amžių" required ><br><br>
+                <label for="svoris" >Svoris</label>
+                <input type="text" id="svoris" placeholder="Įveskite savo svorį" required><br><br>
+                <label for="ugis" >Ūgis: </label>
+                <input type="text" id="ugis" placeholder="Įveskite savo ūgį" required><br><br>
+                <label for="active" >Aktyvumas: </label>
+                <select name="active" id="active">
+                  <option value="N">Mažai judu / nesportuoju.</option>
+                  <option value="V">Nemažai vaikštau / darau tempimo pratimus.</option>
+                  <option value="V">Daug vaikštau / aktyviai sportuoju.</option>
+                </select><br><br>
+
+                <button type="submit">Pateikti</button><br><br>
+            </form>
+
+        <button id="button" type="button">Skaičiuoti</button>
+        <p id="demo"></p>
+
+        <script type="text/javascript" src="kalorijos.js"></script>
+        </div>
+    </div>
+
+    <div class="col-3 col-s-12">
+      <div class="aside">
+        <h2>Kiek?</h2>
+        <p>Vidutiniškai planetos gyventojui reikia apie 1800 kilokalorijų (kcal) per parą.</p>
+        <h2>Kodėl?</h2>
+        <p>Kalorijų skaičius, kurį reiktų suvartoti per dieną, priklauso nuo daugybės faktorių, tokių kaip amžius, svoris, ūgis, lytis, gyvenimo būdas ir bendra sveikatos būklė.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Irma Lažauskienė @2022</p>
+  </div>
+
+
+
+</body>
+</html>
