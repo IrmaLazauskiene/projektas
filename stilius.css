@@ -30,6 +30,17 @@ html {
   border-style: outset;
 }
 
+button:link, button:visited, a:link, a:visited {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:active, button:hover, a:active, a:hover {
+  background-color: #2e7c15;
+}
+
 .menu ul {
   list-style-type: none;
   margin: 0;
@@ -37,15 +48,13 @@ html {
 }
 
 .menu li {
-  padding: 8px;
-  margin-bottom: 7px;
+  padding: 14px 25px;
   background-color: #40cc13;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .menu li:hover {
   background-color: #2e7c15;
+  font-size: 19;
 }
 
 .aside {
@@ -78,7 +87,7 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
+  width: 80%;
   height: auto;
   padding: 5px 5px 5px 5px;
 }
@@ -86,12 +95,13 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  font-style: italic;
 }
 
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 24.99999%;
+  width: 25.99999%;
 }
 
 
@@ -99,6 +109,35 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  margin: 0 2px;
+  font-size: 22px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
 }
 
 /* For mobile phones: */

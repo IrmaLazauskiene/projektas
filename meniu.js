@@ -30,7 +30,6 @@ function dalis (kalorijos, procentai)
 const obj = JSON.parse(text);
 let ilgis = obj.pavadinimai.length;
 
-
 const rasti= function(kalorijos)
 {
   var maistas = "";
@@ -50,7 +49,7 @@ const rasti= function(kalorijos)
       var bviso = 0;
       var rviso = 0;
       maistas +="<div class='responsive'><div class='gallery'>";
-      maistas +=meniu + "-as meniu dienai: " + "<br><br>";
+      maistas +="<div class='desc'>" + meniu + "-as meniu dienai: " + "</div>";
       for (let j = i; j < i+5; j++) {
         viso += obj.pavadinimai[j].blt*4 + obj.pavadinimai[j].rbl*9 + obj.pavadinimai[j].ang*4;
         }
